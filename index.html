@@ -22,11 +22,51 @@
         <button onclick="showAlert()">点击</button>
         <button onclick="confirmAction()">确认</button>
         <button onclick="askName()">姓名</button>
+        <button id="toggle-theme">切换模式</button>
+
         <p id="welcome-message"></p>
         <main>
             <section>
                 <img src="./picture/R.jpg" alt="我的头像">
                 <p>我是一名编程初学者</p>
+            </section>
+
+            <form id="contactForm">
+                <label for="name">姓名：</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">邮箱：</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="message">留言：</label><br>
+                <textarea id="message" name="message" rows="6" cols="50"></textarea><br><br>
+
+                <button type="submit">提交</button>
+            </form>
+
+            <section>
+                <h2>留言板</h2>
+                <input type="text" id="usernameInput" placeholder="请输入用户名">
+                <input type="text" id="messageInput" placeholder="请输入留言">
+                <button id="submitMessage">提交</button>
+                <div id="messageContainer"></div>
+            </section>
+
+            <section id="projects">
+                <h2>我的项目</h2>
+                <div class="project-card">
+                    <img src="./picture/OIP1.jpg" alt="项目1图片">
+                    <h3>项目1</h3>
+                    <p>项目介绍</p>
+                    <button class="view-detail">详细内容</button>
+                </div>
+
+                <div class="project-card">
+                    <img src="./picture/Oip2.jpg" alt="项目2图片">
+                    <h3>项目2</h3>
+                    <p>项目介绍</p>
+                    <button class="view-detail">详细内容</button>
+                </div>
             </section>
         </main>
 
